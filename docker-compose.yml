@@ -1,0 +1,29 @@
+version: '4.11'
+services:
+  php: 
+    build:
+        context: ./
+        dockerfile: Dockerfile
+    depends_on:
+      - db
+    ports:
+      - "4001:80"
+    volumes:
+      - ./src:/var/www/html
+
+  db:
+    image: mysql
+    restart: always
+    ports:
+      - "3001:3306"
+    volumes:
+      - ./db:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 1
+      MYSQL_DATABASE: my_wallet
+      MYSQL_USER: my_wallet
+      MYSQL_PASSWORD: my@wallet
+volumes:
+  php:
+  db: 
+

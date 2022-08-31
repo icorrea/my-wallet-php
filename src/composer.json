@@ -1,0 +1,16 @@
+{
+    "name": "raeltech/mywallet",
+    "description": "My wallet app with PHP and MySql",
+    "autoload": {
+        "psr-4": {
+            "mywallet\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "Israel Correa",
+            "email": "israel.correa@outlook.com"
+        }
+    ],
+    "require": {}
+}

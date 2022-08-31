@@ -1,0 +1,4 @@
+node_modules
+db
+/src/vendor
+.env
