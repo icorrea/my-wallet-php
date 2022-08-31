@@ -1,0 +1,60 @@
+@use "sass:list";
+
+:root{
+    --white:#FFFFFF;
+    --black:#000000;
+    --red: #FF0000;
+    --green: #00FF00;
+    --blue: #0000FF;
+    --cyan: #00FFFF;
+    --magenta:#FF00FF;
+    --yellow:#FFFF00;
+    --first: #FF3A29;
+    --secound: #02A0FC;
+    --third: #4339F2;
+    --fourth: #34B53A;
+    --fifth: #FFB200;
+    --first-light: #FFE5D3;
+    --secound-light: #CCF8FE;
+    --third-light: #DAD7FE;
+    --fourth-light: #E2FBD7;
+    --fifth-light: #FFF5CC;
+}
+
+$colors:(
+    white: --white,
+    black: --black,
+    red: --red,
+    green: --green,
+    blue: --blue,
+    cyan: --cyan,
+    magenta: --magenta,
+    yellow: --yellow,
+    first: --first,
+    second: --secound,
+    third: --third,
+    fourth: --fourth,
+    fifth: --fifth,
+    first-light: --first-light,
+    second-light: --secound-light,
+    third-light: --third-light,
+    fourth-light: --fourth-light,
+    fifth-light: --fifth-light);
+
+$types:(
+    background-color:bg-color,
+    color:text-color);
+
+$font-sizes:(8,16,24,32,40,48,56);
+$type-spaces:(
+    margin: m,
+    margin-top: mt,
+    margin-bottom: mb,
+    margin-left: ml,
+    margin-right: mr,
+    padding: p,
+    padding-top: pt,
+    padding-bottom: pb,
+    padding-left: pl,
+    padding-right: pr,
+);

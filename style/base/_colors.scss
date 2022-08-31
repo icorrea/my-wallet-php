@@ -1,0 +1,7 @@
+@each $type_name, $type_prefix in $types{
+    @each $color_name, $color_value in $colors{
+        .#{$type_prefix}-#{$color_name}{
+            #{$type_name}:var($color_value);
+        }
+    }
+}

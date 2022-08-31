@@ -1,0 +1,21 @@
+@each $type_name, $type_prefix in $type-spaces {
+  @each $itemSize in $font-sizes {
+    .#{$type_prefix}-#{$itemSize} {
+      #{$type_name}: calc($itemSize / 16) rem;
+    }
+  }
+}
+
+.m-none {
+  margin: 0;
+}
+.p-none {
+  padding: 0;
+}
+
+.p-none-f{
+    padding: 0!important;
+}
+.m-none-f{
+    margin: 0!important;
+}
